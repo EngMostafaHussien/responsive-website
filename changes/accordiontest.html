@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/font-awesome.css" rel="stylesheet" />
+    <style>
+        body {
+            padding-top: 20px;
+        }
+
+        .accordion {
+            text-align: center;
+        }
+
+        .accordion.width {
+            display: flex;
+            width: 200px;
+        }
+
+        .accordion.width .card {
+            flex-direction: row;
+            min-width: min-content;
+        }
+
+        .accordion.width .card .card-header {
+            cursor: pointer;
+            writing-mode: vertical-rl;
+            background-color: #0F9D58;
+            border: 2px solid black;
+        }
+
+        .card-body {
+            width: 400px;
+        }
+
+        .collapsing.width {
+            transition: width 0.5s ease;
+            height: auto;
+            width: 10px;
+        }
+
+        h1 {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container width">
+        <div class="accordion width" id="accordionHorizontalExample">
+            <div class="card">
+                <div class="card-header" data-toggle="collapse" data-target="#collapseOne">
+                    <button class="btn btn-primary">Card One</button>
+                </div>
+                <div id="collapseOne" class="collapse show width" data-parent="#accordionHorizontalExample">
+                    <div class="card-body">
+                        <img src="UP/1.jpg" class="rounded-circle ml-2" />
+                        <img src="UP/1.jpg" class="rounded-circle ml-2" />
+                        <img src="UP/1.jpg" class="rounded-circle ml-2" />
+                        <img src="UP/1.jpg" class="rounded-circle ml-2" />
+                    </div>
+                    <div class="card-footer">
+                        <p>Footer For Card One</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" data-toggle="collapse" data-target="#collapseTwo">
+                    <button class="btn btn-primary">Card Two</button>
+                </div>
+                <div id="collapseTwo" class="collapse width" data-parent="#accordionHorizontalExample">
+                    <div class="card-body">
+                        <img src="UP/1.jpg" class="rounded-circle ml-2" />
+                        <img src="UP/1.jpg" class="rounded-circle ml-2" />
+                        <img src="UP/1.jpg" class="rounded-circle ml-2" />
+                        <img src="UP/1.jpg" class="rounded-circle ml-2" />
+                    </div>
+                    <div class="card-footer">
+                        <p>Footer For Card Two</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" data-toggle="collapse" data-target="#collapseThree">
+                    <button class="btn btn-primary">Card Three</button>
+                </div>
+                <div id="collapseThree" class="collapse width" data-parent="#accordionHorizontalExample">
+                    <div class="card-body">
+                        <img src="UP/1.jpg" class="rounded-circle ml-2" />
+                        <img src="UP/1.jpg" class="rounded-circle ml-2" />
+                        <img src="UP/1.jpg" class="rounded-circle ml-2" />
+                        <img src="UP/1.jpg" class="rounded-circle ml-2" />
+                    </div>
+                    <div class="card-footer">
+                        <p>Footer For Card Three</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <script src="js/JQuery-3.3.1.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+
+</html>

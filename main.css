@@ -1,0 +1,84 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container-fluid>.backgroun {
+    background-image: url(2.jpg);
+    color: white;
+    padding-top: 10em;
+    min-height: 90vh;
+    font: 25px bold tahoma;
+}
+
+.container-fluid>.backgroun>.container>div>button{
+    width: 10em;
+    height: 3em;
+    border-radius: 15%;
+}
+.container-fluid>.section>div{
+    position: relative;
+}
+
+.container-fluid>.section>div>.sect{
+    display: none;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-align: center;
+    padding-top: 25%;
+    }
+
+
+.container-fluid>.section>div:hover .sect{
+    display: block;
+    background-image: linear-gradient(to bottom , rgba(50, 35, 255, 0.463), rgba(25, 6, 170, 0.541));
+}
+
+.allcard {
+    border: none;
+}
+
+.allcard>.card-body{
+    background-color: blue;
+    color: white;
+}
+
+#testimonials img {
+    width: 65px;
+    height: 65px;
+    border-radius: 100px;
+    transition: all 0.4s ease;
+}
+
+#testimonials .nav-pills .nav-link.active {
+    background-color: transparent;
+}
+
+#testimonials .nav-pills .nav-link.active img {
+    transform: scale(1.3);
+}
+
+.review .stars {
+    color: #E93B81;
+}
+
+.review p {
+    max-width: 720px;
+    margin: 24px auto;
+    font-style: italic;
+}
+
+.container-fluid>footer>.foot{
+    width: 100%;
+    height: 30vh;
+    background-color: purple;
+    text-align: center;
+    font: 25px bold tahoma;
+    padding-top: 4em;
+    color: white;
+}
